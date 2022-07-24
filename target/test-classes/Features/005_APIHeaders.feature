@@ -6,7 +6,7 @@ And header Accept-Encoding = 'gzip,deflate'
 And header Connection = 'Keep-Alive'
 And header Expect = '100-continue'
 And header User-Agent = 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'
-And header Authorization = 'Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33'
+And header Authorization = 'Bearer '+tokenID
 
 When url baseUrl+'/public/v2/users'
 And path '30'

@@ -46,7 +46,7 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2022-07-24 05:13:44 PM</div>
+                <div id="nav-date">2022-07-24 05:28:01 PM</div>
                         
       
                 <div class="nav-container">
@@ -73,35 +73,35 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">pass the user request with headers_Part1 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 2252</div>
+                        <div class="scenario-time passed">ms: 2377</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="1">
                             <div class="step-ref passed">1</div>
                             <div class="step-cell passed">Given header Content-Type = 'text/xml;charset=ISO-8859-1'</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="2">
                             <div class="step-ref passed">2</div>
                             <div class="step-cell passed">And header Accept-Encoding = 'gzip,deflate'</div>
                         </div>
-                        <div class="time-cell passed">7</div>
+                        <div class="time-cell passed">9</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="3">
                             <div class="step-ref passed">3</div>
                             <div class="step-cell passed">And header Connection = 'Keep-Alive'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
                             <div class="step-ref passed">4</div>
                             <div class="step-cell passed">And header Expect = '100-continue'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="5">
@@ -113,16 +113,16 @@
                     <div class="step-row">
                         <div class="step-container" id="6">
                             <div class="step-ref passed">6</div>
-                            <div class="step-cell passed">And header Authorization = 'Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33'</div>
+                            <div class="step-cell passed">And header Authorization = 'Bearer '+tokenID</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">5</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="7">
                             <div class="step-ref passed">7</div>
                             <div class="step-cell passed">When url baseUrl+'/public/v2/users'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="8">
@@ -136,9 +136,9 @@
                             <div class="step-ref passed">9</div>
                             <div class="step-cell passed">When method GET</div>
                         </div>
-                        <div class="time-cell passed">2223</div>
+                        <div class="time-cell passed">2344</div>
                     </div>
-                    <div class="preformatted" data-parent="9">17:13:39.735 request:
+                    <div class="preformatted" data-parent="9">17:27:55.989 request:
 1 &gt; GET https://gorest.co.in/public/v2/users/30
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
@@ -148,19 +148,19 @@
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7. 1. 5192. 22378)
 
-17:13:41.577 response time in milliseconds: 1835.28
+17:27:57.925 response time in milliseconds: 1927.78
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 72fc663978a87afc-LAX
+1 &lt; CF-RAY: 72fc7b21ad797e59-LAX
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 24 Jul 2022 11:43:39 GMT
+1 &lt; Date: Sun, 24 Jul 2022 11:57:55 GMT
 1 &lt; ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MCDgFHOrm5fPXlKMtS8AYYLjZRMJS%2FSJ%2BKLv8GKH8q7fM1ov3UaArC6zUydk1k%2B6uNAcDiM29KI%2FuU4uyqkMI6KRwgwdfVIUWQeSSNfY6FYq15qtIqI5%2Bi82Ck9kSsU%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ePJkFJq%2B%2BrYpzDOl7s5M%2BPhUuU3L9Yq7bBokg19YY5vmY2jOP9Gg1h%2B1LVbWK3WTMz5wBRw0U5FOmvrNNdgtfQQQuap4J38t3qra%2FuMRSOzv1SxFzRlytEsiKMyCP9k%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 &lt; Transfer-Encoding: chunked
@@ -172,8 +172,8 @@
 1 &lt; X-RateLimit-Limit: 90
 1 &lt; X-RateLimit-Remaining: 89
 1 &lt; X-RateLimit-Reset: 1
-1 &lt; X-Request-Id: 00ac2e9e-70e3-46d0-ba64-71c855db0d6b
-1 &lt; X-Runtime: 0.017983
+1 &lt; X-Request-Id: 203f9ae3-0529-40ab-bfd5-382f49bd0a3a
+1 &lt; X-Runtime: 0.016675
 1 &lt; X-XSS-Protection: 0
 1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {"id":30,"name":"Rajinder Kaul","email":"kaul_rajinder@gislason.io","gender":"female","status":"active"}</div>
@@ -191,7 +191,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="11">17:13:41.577 [print] {
+                    <div class="preformatted" data-parent="11">17:27:57.930 [print] {
   "gender": "female",
   "name": "Rajinder Kaul",
   "id": 30,
@@ -205,7 +205,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [2:17]</span><span class="scenario-name">pass the user request with headers_Part2 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 1719</div>
+                        <div class="scenario-time passed">ms: 1692</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="12">
@@ -240,9 +240,9 @@
                             <div class="step-ref passed">16</div>
                             <div class="step-cell passed">When method GET</div>
                         </div>
-                        <div class="time-cell passed">1718</div>
+                        <div class="time-cell passed">1691</div>
                     </div>
-                    <div class="preformatted" data-parent="16">17:13:41.592 request:
+                    <div class="preformatted" data-parent="16">17:27:57.948 request:
 1 &gt; GET https://gorest.co.in/public/v2/users/30
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -250,19 +250,19 @@
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
 
-17:13:43.316 response time in milliseconds: 1715.40
+17:27:59.636 response time in milliseconds: 1686.32
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 72fc6644498d7cb0-LAX
+1 &lt; CF-RAY: 72fc7b2c6ac27ab1-LAX
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 24 Jul 2022 11:43:41 GMT
+1 &lt; Date: Sun, 24 Jul 2022 11:57:57 GMT
 1 &lt; ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7tc50GDzv7DDFD1BUPi6jxQCaDAIWJIQbc9VwVS2254NaOSMca079PuBIcih1CQ8bvS7%2BU6MrlX4xvzurlQ3O84Ub63PxEhCFvjUXbWL8k71AgltyCwlGGlz80kGsCY%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bKvwdZe%2FmKd5Fjsa7rXmPiMcGaDDMn2NhEHJn5stUXgJ3tiHuQ%2F1uRNgjuSm8dbGK99DOeWe50UMLUUfkKhDLHyL%2FIhBa90UiM%2Bf4Duny4qOmwrNhJfTHNu2j%2Fecvvw%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 &lt; Transfer-Encoding: chunked
@@ -271,8 +271,8 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: 144fcd5f-2d22-47a3-bc01-429e9d0d45a5
-1 &lt; X-Runtime: 0.003424
+1 &lt; X-Request-Id: c9ce76be-2778-4bcd-928f-0970a10e6ed2
+1 &lt; X-Runtime: 0.005014
 1 &lt; X-XSS-Protection: 0
 1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {"id":30,"name":"Rajinder Kaul","email":"kaul_rajinder@gislason.io","gender":"female","status":"active"}</div>
@@ -290,7 +290,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="18">17:13:43.316 [print] {
+                    <div class="preformatted" data-parent="18">17:27:59.638 [print] {
   "gender": "female",
   "name": "Rajinder Kaul",
   "id": 30,
@@ -304,7 +304,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [3:27]</span><span class="scenario-name">pass the user request with headers_Part3 </span>
                         </div>
-                        <div class="scenario-time passed">ms: 1163</div>
+                        <div class="scenario-time passed">ms: 1649</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="19">
@@ -318,7 +318,7 @@
                             <div class="step-ref passed">20</div>
                             <div class="step-cell passed">Given url baseUrl+'/public/v2/users'</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="21">
@@ -332,9 +332,9 @@
                             <div class="step-ref passed">22</div>
                             <div class="step-cell passed">When method GET</div>
                         </div>
-                        <div class="time-cell passed">1162</div>
+                        <div class="time-cell passed">1648</div>
                     </div>
-                    <div class="preformatted" data-parent="22">17:13:43.316 request:
+                    <div class="preformatted" data-parent="22">17:27:59.652 request:
 1 &gt; GET https://gorest.co.in/public/v2/users/30
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -342,19 +342,19 @@
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
 
-17:13:44.487 response time in milliseconds: 1158.58
+17:28:01.298 response time in milliseconds: 1644.53
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 72fc664eeb817b11-LAX
+1 &lt; CF-RAY: 72fc7b3719cc7d8f-LAX
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sun, 24 Jul 2022 11:43:42 GMT
+1 &lt; Date: Sun, 24 Jul 2022 11:57:59 GMT
 1 &lt; ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZUzsQE%2B48X5E1Y2A3x6u1zV5qUqP%2F7ItmapXOE466pHJKXQ6FmfDXPogMnN4lNGKETSbfZ3GTO3d%2F6CcVOhVJ6Ivh9t3%2BJ2uVWbQsLQ0GhxStqxtSogN343S4QVZiyE%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=b3NpmyXzKAonl1uC8naJyXwe%2BA%2Bsd%2Fe0vjnPnM%2BkOWJjU629IZJcF65zajbjYrDKOE09D1tTMXKi30P64FrmTRTpL16VlKcURqanniiMtBWnb5iZmjLhWJPIBTl2bog%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 &lt; Transfer-Encoding: chunked
@@ -363,8 +363,8 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: cf143db1-cc9b-466d-8ba1-b0281e8ad787
-1 &lt; X-Runtime: 0.003222
+1 &lt; X-Request-Id: 956a4e37-91f6-41ea-9e65-26490a5a0715
+1 &lt; X-Runtime: 0.003246
 1 &lt; X-XSS-Protection: 0
 1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 {"id":30,"name":"Rajinder Kaul","email":"kaul_rajinder@gislason.io","gender":"female","status":"active"}</div>
@@ -382,7 +382,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="24">17:13:44.488 [print] {
+                    <div class="preformatted" data-parent="24">17:28:01.299 [print] {
   "gender": "female",
   "name": "Rajinder Kaul",
   "id": 30,
