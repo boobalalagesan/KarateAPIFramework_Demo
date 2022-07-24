@@ -1,36 +1,36 @@
-19:12:35.827 [print] BPQncNizSo
-19:12:35.836 [print] {
-  "name": "tom",
+20:23:34.608 [print] CQvXLXgMyT
+20:23:34.620 [print] {
+  "name": "Jerry",
+  "email": "CQvXLXgMyT@gmail.com",
   "gender": "male",
-  "status": "active",
-  "email": "BPQncNizSo@gmail.com"
+  "status": "active"
 }
 
-19:12:36.181 request:
+20:23:34.994 request:
 1 > POST https://gorest.co.in/public/v2/users
 1 > Accept-Encoding: gzip,deflate
 1 > Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
 1 > Connection: Keep-Alive
-1 > Content-Length: 79
+1 > Content-Length: 81
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: gorest.co.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15.1)
-{"name":"tom","gender":"male","status":"active","email":"BPQncNizSo@gmail.com"}
+{"name":"Jerry","email":"CQvXLXgMyT@gmail.com","gender":"male","status":"active"}
 
-19:12:38.073 response time in milliseconds: 1889.21
+20:23:36.855 response time in milliseconds: 1857.05
 1 < 201
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 72fd14762fa07ea1-LAX
+1 < CF-RAY: 72fd7c6d797c7cb6-LAX
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 24 Jul 2022 13:42:36 GMT
-1 < ETag: W/"9478a46b1a931ebca41d73b9f2b39ca4"
+1 < Date: Sun, 24 Jul 2022 14:53:34 GMT
+1 < ETag: W/"4621e1c7e5cddb2ce369b763561d8c0a"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Location: https://gorest.co.in/public/v2/users/4505
+1 < Location: https://gorest.co.in/public/v2/users/4573
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Referrer-Policy: strict-origin-when-cross-origin
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vx58CPlLDHsPS%2BXXxKdqjAJLDc9axsg1Dxq4QFZ09zvNC58acMBKuVy2ZltHWRNACXcAyJ%2FTPlUDYfJjKrGcNGg9cNEjx%2FCQNrzoHXJvhxQ3FLv3wKxfNsi1kT2dA8M%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7tJfgF9yP54d3mBrW6K2c1fCc%2FvOLt1%2FQ1AqIY0TieNxZ%2BvT77bxbaA%2FWKpDZJP%2Fpqs9siUkiPPobc0vvM5hE8iXieYh6QeqqYuNtJzApLO%2Bkq6aJlAywN4k0u3hFqU%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 < Transfer-Encoding: chunked
@@ -42,78 +42,81 @@
 1 < X-RateLimit-Limit: 90
 1 < X-RateLimit-Remaining: 89
 1 < X-RateLimit-Reset: 1
-1 < X-Request-Id: fce36fa3-2070-48a4-ae88-9e9c675af2be
-1 < X-Runtime: 0.020768
+1 < X-Request-Id: 75299a1f-9d27-4393-9e64-9632390fc656
+1 < X-Runtime: 0.019071
 1 < X-XSS-Protection: 0
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"id":4505,"name":"tom","email":"BPQncNizSo@gmail.com","gender":"male","status":"active"}
+{"id":4573,"name":"Jerry","email":"CQvXLXgMyT@gmail.com","gender":"male","status":"active"}
 
-19:12:38.077 assertion failed: path: $.email, actual: 'BPQncNizSo@gmail.com', expected: 'requestPayload.email', reason: not equal
-t equal
-atible;IE;GACv7 1 5192 22378)
+20:23:36.872 [print] 4573
+20:23:36.877 request:
+2 > DELETE https://gorest.co.in/public/v2/users/4573
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
+2 > Connection: Keep-Alive
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15.1)
 
-17:27:59.636 response time in milliseconds: 1686.32
-1 < 200
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 72fc7b2c6ac27ab1-LAX
-1 < Cache-Control: max-age=0, private, must-revalidate
-1 < Connection: keep-alive
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 24 Jul 2022 11:57:57 GMT
-1 < ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Referrer-Policy: strict-origin-when-cross-origin
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bKvwdZe%2FmKd5Fjsa7rXmPiMcGaDDMn2NhEHJn5stUXgJ3tiHuQ%2F1uRNgjuSm8dbGK99DOeWe50UMLUUfkKhDLHyL%2FIhBa90UiM%2Bf4Duny4qOmwrNhJfTHNu2j%2Fecvvw%3D"}],"group":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 < Transfer-Encoding: chunked
-1 < Vary: [Accept-Encoding, Origin]
-1 < X-Content-Type-Options: nosniff
-1 < X-Download-Options: noopen
-1 < X-Frame-Options: SAMEORIGIN
-1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: c9ce76be-2778-4bcd-928f-0970a10e6ed2
-1 < X-Runtime: 0.005014
-1 < X-XSS-Protection: 0
-1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-{"id":30,"name":"Rajinder Kaul","email":"kaul_rajinder@gislason.io","gender":"female","status":"active"}
+20:23:38.075 response time in milliseconds: 1197.17
+2 < 204
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 72fd7c785ba97c91-LAX
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Date: Sun, 24 Jul 2022 14:53:35 GMT
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TYmsxD1Q5Dz8KhSW2c%2FOCjJDc9de3fXARgrl%2BYfkU7OK%2FMsHvZ9EN9Mcj4R3ShVBYujByhTDP9I%2FmFhVfOV7xN2ieaorsZVWyA7AUb1mnJqRSWdkdgVtnWUm%2FyYGDVY%3D"}],"group":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < Vary: Origin
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-RateLimit-Limit: 90
+2 < X-RateLimit-Remaining: 89
+2 < X-RateLimit-Reset: 1
+2 < X-Request-Id: 95a0ccec-cf7a-4ee2-8038-48f995915685
+2 < X-Runtime: 0.023139
+2 < X-XSS-Protection: 0
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
-17:27:59.638 [print] {
-  "gender": "female",
-  "name": "Rajinder Kaul",
-  "id": 30,
-  "email": "kaul_rajinder@gislason.io",
-  "status": "active"
-}
+20:23:38.085 request:
+3 > GET https://gorest.co.in/public/v2/users/4573
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: gorest.co.in
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15.1)
 
-17:27:59.652 request:
-1 > GET https://gorest.co.in/public/v2/users/30
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Type: text/xml;charset=ISO-8859-1
-1 > Host: gorest.co.in
-1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
+20:23:39.761 response time in milliseconds: 1674.79
+3 < 404
+3 < CF-Cache-Status: DYNAMIC
+3 < CF-RAY: 72fd7c7fbdd27bf5-LAX
+3 < Cache-Control: no-cache
+3 < Connection: keep-alive
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Sun, 24 Jul 2022 14:53:37 GMT
+3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+3 < Referrer-Policy: strict-origin-when-cross-origin
+3 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H236510z8W%2FBMQKefLSAYkz3iDNIDswU9uYLLW0lX38XJ6Eni4YqHwk7FsdAmFjNF3G6sgYxjXwRt8y%2F0%2BKN24uxW%2BrNmYZZiIBLmOOPbCN4DZA7bA1YD9gLAoshVow%3D"}],"group":"cf-nel","max_age":604800}
+3 < Server: cloudflare
+3 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+3 < Transfer-Encoding: chunked
+3 < Vary: [Accept-Encoding, Origin]
+3 < X-Content-Type-Options: nosniff
+3 < X-Download-Options: noopen
+3 < X-Frame-Options: SAMEORIGIN
+3 < X-Permitted-Cross-Domain-Policies: none
+3 < X-Request-Id: d4e97d53-0b58-477a-90d9-efcc775b5982
+3 < X-Runtime: 0.003019
+3 < X-XSS-Protection: 0
+3 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"message":"Resource not found"}
 
-17:28:01.298 response time in milliseconds: 1644.53
-1 < 200
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 72fc7b3719cc7d8f-LAX
-1 < Cache-Control: max-age=0, private, must-revalidate
-1 < Connection: keep-alive
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 24 Jul 2022 11:57:59 GMT
-1 < ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Referrer-Policy: strict-origin-when-cross-origin
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=b3NpmyXzKAonl1uC8naJyXwe%2BA%2Bsd%2Fe0vjnPnM%2BkOWJjU629IZJcF65zajbjYrDKOE09D1tTMXKi30P64FrmTRTpL16VlKcURqanniiMtBWnb5iZmjLhWJPIBTl2bog%3D"}],"group":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 < Transfer-Encoding: chunked
-1 < Vary: [Accept-Encoding, Origin]
-1 < X-Content-Type-Options: nosniff
-1 < X-Download-Options: noopen
+oad-Options: noopen
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Permitted-Cross-Domain-Policies: none
 1 < X-Request-Id: 956a4e37-91f6-41ea-9e65-26490a5a0715

@@ -1,1 +1,1 @@
-{"features":1,"ignored":0,"efficiency":0.768470868253436,"failures":{"src.test.java.Features.007_GenerateRandomString":"007_GenerateRandomString.feature:40 - path: $.email, actual: 'BPQncNizSo@gmail.com', expected: 'requestPayload.email', reason: not equal"},"totalTime":2292.3486,"threads":1,"scenarios":1,"failed":1,"passed":0,"version":"0.9.6","elapsedTime":2983.0}
+{"features":1,"ignored":0,"efficiency":0.8800238474576271,"failures":null,"totalTime":5192.1407,"threads":1,"scenarios":1,"failed":0,"passed":1,"version":"0.9.6","elapsedTime":5900.0}

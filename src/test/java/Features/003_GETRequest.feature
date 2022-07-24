@@ -2,7 +2,7 @@ Feature: Sample get request API
 
   Scenario: Get response and check status code 200 OK
     Given url baseUrl+'/public/v2/users'
-    And path '30'
+    And path '9'
     When method GET
     Then status 200
     * print response
