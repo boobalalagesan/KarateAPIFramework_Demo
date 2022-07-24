@@ -1,0 +1,239 @@
+17:13:39.735 request:
+1 > GET https://gorest.co.in/public/v2/users/30
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
+1 > Connection: Keep-Alive
+1 > Content-Type: text/xml;charset=ISO-8859-1
+1 > Expect: 100-continue
+1 > Host: gorest.co.in
+1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7. 1. 5192. 22378)
+
+17:13:41.577 response time in milliseconds: 1835.28
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72fc663978a87afc-LAX
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 24 Jul 2022 11:43:39 GMT
+1 < ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MCDgFHOrm5fPXlKMtS8AYYLjZRMJS%2FSJ%2BKLv8GKH8q7fM1ov3UaArC6zUydk1k%2B6uNAcDiM29KI%2FuU4uyqkMI6KRwgwdfVIUWQeSSNfY6FYq15qtIqI5%2Bi82Ck9kSsU%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: 00ac2e9e-70e3-46d0-ba64-71c855db0d6b
+1 < X-Runtime: 0.017983
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":30,"name":"Rajinder Kaul","email":"kaul_rajinder@gislason.io","gender":"female","status":"active"}
+
+17:13:41.577 [print] {
+  "gender": "female",
+  "name": "Rajinder Kaul",
+  "id": 30,
+  "email": "kaul_rajinder@gislason.io",
+  "status": "active"
+}
+
+17:13:41.592 request:
+1 > GET https://gorest.co.in/public/v2/users/30
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: text/xml;charset=ISO-8859-1
+1 > Host: gorest.co.in
+1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
+
+17:13:43.316 response time in milliseconds: 1715.40
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72fc6644498d7cb0-LAX
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 24 Jul 2022 11:43:41 GMT
+1 < ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7tc50GDzv7DDFD1BUPi6jxQCaDAIWJIQbc9VwVS2254NaOSMca079PuBIcih1CQ8bvS7%2BU6MrlX4xvzurlQ3O84Ub63PxEhCFvjUXbWL8k71AgltyCwlGGlz80kGsCY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 144fcd5f-2d22-47a3-bc01-429e9d0d45a5
+1 < X-Runtime: 0.003424
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":30,"name":"Rajinder Kaul","email":"kaul_rajinder@gislason.io","gender":"female","status":"active"}
+
+17:13:43.316 [print] {
+  "gender": "female",
+  "name": "Rajinder Kaul",
+  "id": 30,
+  "email": "kaul_rajinder@gislason.io",
+  "status": "active"
+}
+
+17:13:43.316 request:
+1 > GET https://gorest.co.in/public/v2/users/30
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: text/xml;charset=ISO-8859-1
+1 > Host: gorest.co.in
+1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
+
+17:13:44.487 response time in milliseconds: 1158.58
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 72fc664eeb817b11-LAX
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 24 Jul 2022 11:43:42 GMT
+1 < ETag: W/"b2517f56abe265d3acdda3cd75c1ce20"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZUzsQE%2B48X5E1Y2A3x6u1zV5qUqP%2F7ItmapXOE466pHJKXQ6FmfDXPogMnN4lNGKETSbfZ3GTO3d%2F6CcVOhVJ6Ivh9t3%2BJ2uVWbQsLQ0GhxStqxtSogN343S4QVZiyE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: cf143db1-cc9b-466d-8ba1-b0281e8ad787
+1 < X-Runtime: 0.003222
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":30,"name":"Rajinder Kaul","email":"kaul_rajinder@gislason.io","gender":"female","status":"active"}
+
+17:13:44.488 [print] {
+  "gender": "female",
+  "name": "Rajinder Kaul",
+  "id": 30,
+  "email": "kaul_rajinder@gislason.io",
+  "status": "active"
+}
+
+me": "Rajinder Kaul",
+    "id": 30,
+    "email": "kaul_rajinder@gislason.io",
+    "status": "active"
+  },
+  "meta": null
+}
+
+%2FUsLibzPcXOZuxREjxqaAcWA32oQJS61UGMMyv7qWq0%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+1 < X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+1 < X-Links-Previous: 
+1 < X-Pagination-Limit: 10
+1 < X-Pagination-Page: 1
+1 < X-Pagination-Pages: 177
+1 < X-Pagination-Total: 1762
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 763cad06-dc59-479f-b06e-beec6820c5c6
+1 < X-Runtime: 0.007152
+1 < X-XSS-Protection: 0
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+[{"id":3628,"name":"Brahmabrata Sinha","email":"sinha_brahmabrata@corwin.co","gender":"female","status":"active"},{"id":3627,"name":"The Hon. Naveen Guneta","email":"hon_the_naveen_guneta@kertzmann.io","gender":"female","status":"active"},{"id":3625,"name":"Rita Kapoor","email":"kapoor_rita@gusikowski.name","gender":"female","status":"active"},{"id":3624,"name":"Tarun Rana","email":"tarun_rana@nikolaus-stanton.info","gender":"female","status":"active"},{"id":3618,"name":"Kamala Prajapat","email":"prajapat_kamala@wintheiser-reichel.io","gender":"female","status":"active"},{"id":3616,"name":"Aatmaj Sinha","email":"sinha_aatmaj@zemlak-pfannerstill.net","gender":"male","status":"active"},{"id":3614,"name":"Chakravarti Kaul","email":"chakravarti_kaul@thiel.net","gender":"male","status":"active"},{"id":3612,"name":"Bhuvanesh Gill","email":"bhuvanesh_gill@hirthe.co","gender":"female","status":"active"},{"id":3610,"name":"Hiranmaya Naik","email":"naik_hiranmaya@douglas.org","gender":"female","status":"active"},{"id":3609,"name":"Chandini Butt","email":"chandini_butt@johnson.info","gender":"male","status":"active"}]
+
+16:53:43.846 [print] [
+  {
+    "gender": "female",
+    "name": "Brahmabrata Sinha",
+    "id": 3628,
+    "email": "sinha_brahmabrata@corwin.co",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "The Hon. Naveen Guneta",
+    "id": 3627,
+    "email": "hon_the_naveen_guneta@kertzmann.io",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Rita Kapoor",
+    "id": 3625,
+    "email": "kapoor_rita@gusikowski.name",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Tarun Rana",
+    "id": 3624,
+    "email": "tarun_rana@nikolaus-stanton.info",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Kamala Prajapat",
+    "id": 3618,
+    "email": "prajapat_kamala@wintheiser-reichel.io",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Aatmaj Sinha",
+    "id": 3616,
+    "email": "sinha_aatmaj@zemlak-pfannerstill.net",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Chakravarti Kaul",
+    "id": 3614,
+    "email": "chakravarti_kaul@thiel.net",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Bhuvanesh Gill",
+    "id": 3612,
+    "email": "bhuvanesh_gill@hirthe.co",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Hiranmaya Naik",
+    "id": 3610,
+    "email": "naik_hiranmaya@douglas.org",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Chandini Butt",
+    "id": 3609,
+    "email": "chandini_butt@johnson.info",
+    "status": "active"
+  }
+]
+
+16:53:43.847 [print] 10
+3:10.882 assertion failed: path: $, actual: 10, expected: 20, reason: not equal (Integer)

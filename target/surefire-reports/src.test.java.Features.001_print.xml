@@ -1,0 +1,11 @@
+<testsuite failures="0" name="src/test/java/Features/001_print.feature" skipped="0" tests="2" time="0.027627">
+  <testcase classname="src.test.java.Features.001_print" name="Print Hello world" time="0.004121">
+    <system-out>* print 'Hello World' ..................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Features.001_print" name="Add two values" time="0.023506">
+    <system-out>* print 'Hello World' ..................................................... passed
+* def a = 10 .............................................................. passed
+* def b = 20 .............................................................. passed
+* print 'the added value is ' + (a+b) ..................................... passed</system-out>
+  </testcase>
+</testsuite>

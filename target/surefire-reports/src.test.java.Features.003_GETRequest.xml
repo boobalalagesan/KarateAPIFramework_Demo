@@ -1,0 +1,29 @@
+<testsuite failures="0" name="src/test/java/Features/003_GETRequest.feature" skipped="0" tests="2" time="4.109608">
+  <testcase classname="src.test.java.Features.003_GETRequest" name="Get response and check status code 200 OK" time="2.358703">
+    <system-out>Given url baseUrl+'/public/v2/users' ...................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jo = response ....................................................... passed
+* def actname = jo.name ................................................... passed
+* match actname == 'Rajinder Kaul' ........................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Features.003_GETRequest" name="Get response and check status code 404 OK" time="1.750905">
+    <system-out>Given url baseUrl+'/public/v2/users' ...................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jo = response ....................................................... passed
+* def actname = jo.name ................................................... passed
+* match actname == 'Rajinder Kaul' ........................................ passed
+Given url baseUrl+'/public/v2/users' ...................................... passed
+And path '1' .............................................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed
+* print response .......................................................... passed
+* def jo = response ....................................................... passed
+* print jo ................................................................ passed</system-out>
+  </testcase>
+</testsuite>

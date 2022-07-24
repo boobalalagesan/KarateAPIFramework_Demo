@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/Features/002_PrintJson.feature" skipped="0" tests="2" time="0.08711">
+  <testcase classname="src.test.java.Features.002_PrintJson" name="Print Simple Json Array" time="0.075785">
+    <system-out>* def jsonObject = ........................................................ passed
+* print jsonObject ........................................................ passed
+* print  'name is ' + (jsonObject[1].name) + ' City is ' + (jsonObject[1].city) . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Features.002_PrintJson" name="Print Complex Json Array" time="0.011325">
+    <system-out>* def jsonObject = ........................................................ passed
+* print jsonObject ........................................................ passed
+* print  'name is ' + (jsonObject[1].name) + ' City is ' + (jsonObject[1].city) . passed
+* def jsonObj = ........................................................... passed
+* print jsonObj ........................................................... passed
+* print jsonObj.topping.id ................................................ passed</system-out>
+  </testcase>
+</testsuite>

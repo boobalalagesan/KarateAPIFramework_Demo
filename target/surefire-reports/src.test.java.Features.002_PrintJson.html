@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.Features.002_PrintJson</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2022-07-24 01:42:05 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:4]">[1:4] Print Simple Json Array </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:25]">[2:25] Print Complex Json Array </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/Features/002_PrintJson.feature</span><span class="feature-description">Print json values</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:4]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">PrintSimple</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">Print Simple Json Array </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 76</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="1">
+                            <div class="step-ref passed">1</div>
+                            <div class="step-cell passed">* def jsonObject =</div>
+                        </div>
+                        <div class="time-cell passed">48</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">[
+{
+"name" : "Boobal",
+"city" : "Namakkal",
+"age"  : 24
+},
+{
+"name" : "Alagesan",
+"city" : "Salem",
+"age"  : 47
+}
+]
+13:42:05.468 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">* print jsonObject</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="2">13:42:05.529 [print] [
+  {
+    "name": "Boobal",
+    "city": "Namakkal",
+    "age": 24
+  },
+  {
+    "name": "Alagesan",
+    "city": "Salem",
+    "age": 47
+  }
+]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">* print  'name is ' + (jsonObject[1].name) + ' City is ' + (jsonObject[1].city)</div>
+                        </div>
+                        <div class="time-cell passed">27</div>
+                    </div>
+                    <div class="preformatted" data-parent="3">13:42:05.556 [print] name is Alagesan City is Salem</div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:25]">
+                        <div class="heading-container">
+                            <div class="scenario-tags">
+                                <a class="badge badge-primary" href="karate-tags.html">PrintComples</a>
+                            </div>
+                            <span class="scenario-keyword">Scenario: [2:25]</span><span class="scenario-name">Print Complex Json Array </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 11</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">* def jsonObj =</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="4">{
+	"id": "0001",
+	"type": "donut",
+	"name": "Cake",
+	"ppu": 0.55,
+	"batters":
+		{
+			"batter":
+				[
+					{ "id": "1001", "type": "Regular" },
+					{ "id": "1002", "type": "Chocolate" },
+					{ "id": "1003", "type": "Blueberry" },
+					{ "id": "1004", "type": "Devil's Food" }
+				]
+		},
+	"topping":
+		[
+			{ "id": "5001", "type": "None" },
+			{ "id": "5002", "type": "Glazed" },
+			{ "id": "5005", "type": "Sugar" },
+			{ "id": "5007", "type": "Powdered Sugar" },
+			{ "id": "5006", "type": "Chocolate with Sprinkles" },
+			{ "id": "5003", "type": "Chocolate" },
+			{ "id": "5004", "type": "Maple" }
+		]
+}
+13:42:05.563 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">* print jsonObj</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">13:42:05.566 [print] {
+  "id": "0001",
+  "type": "donut",
+  "name": "Cake",
+  "ppu": 0.55,
+  "batters": {
+    "batter": [
+      {
+        "id": "1001",
+        "type": "Regular"
+      },
+      {
+        "id": "1002",
+        "type": "Chocolate"
+      },
+      {
+        "id": "1003",
+        "type": "Blueberry"
+      },
+      {
+        "id": "1004",
+        "type": "Devil's Food"
+      }
+    ]
+  },
+  "topping": [
+    {
+      "id": "5001",
+      "type": "None"
+    },
+    {
+      "id": "5002",
+      "type": "Glazed"
+    },
+    {
+      "id": "5005",
+      "type": "Sugar"
+    },
+    {
+      "id": "5007",
+      "type": "Powdered Sugar"
+    },
+    {
+      "id": "5006",
+      "type": "Chocolate with Sprinkles"
+    },
+    {
+      "id": "5003",
+      "type": "Chocolate"
+    },
+    {
+      "id": "5004",
+      "type": "Maple"
+    }
+  ]
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">* print jsonObj.topping.id</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">13:42:05.575 [print]</div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

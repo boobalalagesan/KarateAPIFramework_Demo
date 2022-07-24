@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.Features.004_GET_Query_params</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">2</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2022-07-24 04:53:43 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:3]">[1:3] get all active users </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:11]">[2:11] get all active users and get the count </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/Features/004_GET_Query_params.feature</span><span class="feature-description">Sample get query param request API</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:3]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">get all active users </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 2198</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="1">
+                            <div class="step-ref passed">1</div>
+                            <div class="step-cell passed">* def query = {status:'active', gender: 'male'}</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">Given url baseUrl+'/public/v1/users'</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">And params query</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">2191</div>
+                    </div>
+                    <div class="preformatted" data-parent="4">16:53:40.258 request:
+1 &gt; GET https://gorest.co.in/public/v1/users?status=active&amp;gender=male
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15.1)
+
+16:53:42.115 response time in milliseconds: 1857.28
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 72fc48f0b9497bfb-LAX
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 24 Jul 2022 11:23:39 GMT
+1 &lt; ETag: W/"86b2f0007b9e7e81fee10167db9a5462"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8kOgIBU2XOUxDCALg70eq%2FnGnIUm0%2BXxD78Ig%2BiICLkQ7UICF1tRvnOEBizDbOGXR%2FHI1SAquypyVuTckMXShW%2FV5LAVKpJNcWhWRFMUEiIwyqu7Nvzo7n4LJe2h%2BG4%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Accept-Encoding, Origin]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: b853a63c-e3f4-4506-90f7-305a07147b97
+1 &lt; X-Runtime: 0.007257
+1 &lt; X-XSS-Protection: 0
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"meta":{"pagination":{"total":889,"pages":89,"page":1,"limit":10,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":3616,"name":"Aatmaj Sinha","email":"sinha_aatmaj@zemlak-pfannerstill.net","gender":"male","status":"active"},{"id":3614,"name":"Chakravarti Kaul","email":"chakravarti_kaul@thiel.net","gender":"male","status":"active"},{"id":3609,"name":"Chandini Butt","email":"chandini_butt@johnson.info","gender":"male","status":"active"},{"id":3607,"name":"Bala Mehra","email":"bala_mehra@schultz.biz","gender":"male","status":"active"},{"id":3602,"name":"Navin Guha Jr.","email":"jr_guha_navin@kassulke.name","gender":"male","status":"active"},{"id":3600,"name":"Vaishnavi Bharadwaj","email":"vaishnavi_bharadwaj@jones.net","gender":"male","status":"active"},{"id":3592,"name":"Ashok Arora","email":"arora_ashok@becker-spinka.name","gender":"male","status":"active"},{"id":3590,"name":"Sarala Gill","email":"gill_sarala@skiles.name","gender":"male","status":"active"},{"id":3589,"name":"Amodini Mehra","email":"mehra_amodini@lowe-hermann.com","gender":"male","status":"active"},{"id":3587,"name":"Rev. Himani Kaniyar","email":"kaniyar_rev_himani@keeling-welch.org","gender":"male","status":"active"}]}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">16:53:42.126 [print] {
+  "data": [
+    {
+      "gender": "male",
+      "name": "Aatmaj Sinha",
+      "id": 3616,
+      "email": "sinha_aatmaj@zemlak-pfannerstill.net",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Chakravarti Kaul",
+      "id": 3614,
+      "email": "chakravarti_kaul@thiel.net",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Chandini Butt",
+      "id": 3609,
+      "email": "chandini_butt@johnson.info",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Bala Mehra",
+      "id": 3607,
+      "email": "bala_mehra@schultz.biz",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Navin Guha Jr.",
+      "id": 3602,
+      "email": "jr_guha_navin@kassulke.name",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Vaishnavi Bharadwaj",
+      "id": 3600,
+      "email": "vaishnavi_bharadwaj@jones.net",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Ashok Arora",
+      "id": 3592,
+      "email": "arora_ashok@becker-spinka.name",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Sarala Gill",
+      "id": 3590,
+      "email": "gill_sarala@skiles.name",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Amodini Mehra",
+      "id": 3589,
+      "email": "mehra_amodini@lowe-hermann.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Rev. Himani Kaniyar",
+      "id": 3587,
+      "email": "kaniyar_rev_himani@keeling-welch.org",
+      "status": "active"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 889,
+      "pages": 89,
+      "limit": 10,
+      "links": {
+        "next": "https://gorest.co.in/public/v1/users?page=2",
+        "current": "https://gorest.co.in/public/v1/users?page=1",
+        "previous": null
+      },
+      "page": 1
+    }
+  }
+}</div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:11]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:11]</span><span class="scenario-name">get all active users and get the count </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 1718</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* def query = {status:'active'}</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">Given url baseUrl+'/public/v2/users'</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">And params query</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">1693</div>
+                    </div>
+                    <div class="preformatted" data-parent="10">16:53:42.151 request:
+1 &gt; GET https://gorest.co.in/public/v2/users?status=active
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15.1)
+
+16:53:43.845 response time in milliseconds: 1689.47
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 72fc48fb9eb552ef-LAX
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 24 Jul 2022 11:23:41 GMT
+1 &lt; ETag: W/"25d86b0119dba780ca48bc4b0f027ae1"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IY2cHOIyQ5VN5ssoF0RgA7uIWpKfJz9wb6n4f%2BXLK2XYJC%2BA0xka%2BDV8q95oHfaN9TAg2C%2F5KbMLE3th0qaP%2FUsLibzPcXOZuxREjxqaAcWA32oQJS61UGMMyv7qWq0%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: [Accept-Encoding, Origin]
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+1 &lt; X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+1 &lt; X-Links-Previous: 
+1 &lt; X-Pagination-Limit: 10
+1 &lt; X-Pagination-Page: 1
+1 &lt; X-Pagination-Pages: 177
+1 &lt; X-Pagination-Total: 1762
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: 763cad06-dc59-479f-b06e-beec6820c5c6
+1 &lt; X-Runtime: 0.007152
+1 &lt; X-XSS-Protection: 0
+1 &lt; alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+[{"id":3628,"name":"Brahmabrata Sinha","email":"sinha_brahmabrata@corwin.co","gender":"female","status":"active"},{"id":3627,"name":"The Hon. Naveen Guneta","email":"hon_the_naveen_guneta@kertzmann.io","gender":"female","status":"active"},{"id":3625,"name":"Rita Kapoor","email":"kapoor_rita@gusikowski.name","gender":"female","status":"active"},{"id":3624,"name":"Tarun Rana","email":"tarun_rana@nikolaus-stanton.info","gender":"female","status":"active"},{"id":3618,"name":"Kamala Prajapat","email":"prajapat_kamala@wintheiser-reichel.io","gender":"female","status":"active"},{"id":3616,"name":"Aatmaj Sinha","email":"sinha_aatmaj@zemlak-pfannerstill.net","gender":"male","status":"active"},{"id":3614,"name":"Chakravarti Kaul","email":"chakravarti_kaul@thiel.net","gender":"male","status":"active"},{"id":3612,"name":"Bhuvanesh Gill","email":"bhuvanesh_gill@hirthe.co","gender":"female","status":"active"},{"id":3610,"name":"Hiranmaya Naik","email":"naik_hiranmaya@douglas.org","gender":"female","status":"active"},{"id":3609,"name":"Chandini Butt","email":"chandini_butt@johnson.info","gender":"male","status":"active"}]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">* def jsonResponse = response</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">* print jsonResponse</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="13">16:53:43.846 [print] [
+  {
+    "gender": "female",
+    "name": "Brahmabrata Sinha",
+    "id": 3628,
+    "email": "sinha_brahmabrata@corwin.co",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "The Hon. Naveen Guneta",
+    "id": 3627,
+    "email": "hon_the_naveen_guneta@kertzmann.io",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Rita Kapoor",
+    "id": 3625,
+    "email": "kapoor_rita@gusikowski.name",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Tarun Rana",
+    "id": 3624,
+    "email": "tarun_rana@nikolaus-stanton.info",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Kamala Prajapat",
+    "id": 3618,
+    "email": "prajapat_kamala@wintheiser-reichel.io",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Aatmaj Sinha",
+    "id": 3616,
+    "email": "sinha_aatmaj@zemlak-pfannerstill.net",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Chakravarti Kaul",
+    "id": 3614,
+    "email": "chakravarti_kaul@thiel.net",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Bhuvanesh Gill",
+    "id": 3612,
+    "email": "bhuvanesh_gill@hirthe.co",
+    "status": "active"
+  },
+  {
+    "gender": "female",
+    "name": "Hiranmaya Naik",
+    "id": 3610,
+    "email": "naik_hiranmaya@douglas.org",
+    "status": "active"
+  },
+  {
+    "gender": "male",
+    "name": "Chandini Butt",
+    "id": 3609,
+    "email": "chandini_butt@johnson.info",
+    "status": "active"
+  }
+]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">* def userCount = jsonResponse.length</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">* print userCount</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="15">16:53:43.847 [print] 10</div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">* match userCount == 10</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

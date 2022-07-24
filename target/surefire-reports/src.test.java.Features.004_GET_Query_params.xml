@@ -1,0 +1,28 @@
+<testsuite failures="0" name="src/test/java/Features/004_GET_Query_params.feature" skipped="0" tests="2" time="3.916383">
+  <testcase classname="src.test.java.Features.004_GET_Query_params" name="get all active users" time="2.198452">
+    <system-out>* def query = {status:'active', gender: 'male'} ........................... passed
+Given url baseUrl+'/public/v1/users' ...................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Features.004_GET_Query_params" name="get all active users and get the count" time="1.71793">
+    <system-out>* def query = {status:'active', gender: 'male'} ........................... passed
+Given url baseUrl+'/public/v1/users' ...................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def query = {status:'active'} ........................................... passed
+Given url baseUrl+'/public/v2/users' ...................................... passed
+And params query .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* def jsonResponse = response ............................................. passed
+* print jsonResponse ...................................................... passed
+* def userCount = jsonResponse.length ..................................... passed
+* print userCount ......................................................... passed
+* match userCount == 10 ................................................... passed</system-out>
+  </testcase>
+</testsuite>

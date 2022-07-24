@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-3"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"005_APIHeaders[1:3]","start":637,"end":2890,"title":"005_APIHeaders[1:3] 05:30:00.637-05:30:02.890 pass the user request with headers_Part1"},{"id":2,"group":1,"content":"005_APIHeaders[2:17]","start":2905,"end":4629,"title":"005_APIHeaders[2:17] 05:30:02.905-05:30:04.629 pass the user request with headers_Part2"},{"id":3,"group":1,"content":"005_APIHeaders[3:27]","start":4629,"end":5801,"title":"005_APIHeaders[3:27] 05:30:04.629-05:30:05.801 pass the user request with headers_Part3"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>
