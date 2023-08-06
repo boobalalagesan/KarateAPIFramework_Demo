@@ -1,9 +1,9 @@
 Feature: Print json values
 
-@PrintSimple
-Scenario: Print Simple Json Array
+  @PrintSimple
+  Scenario: Print Simple Json Array
 
-* def jsonObject = 
+    * def jsonObject =
 """
 [
 {
@@ -18,13 +18,13 @@ Scenario: Print Simple Json Array
 }
 ]
 """
-* print jsonObject
-* print  'name is ' + (jsonObject[1].name) + ' City is ' + (jsonObject[1].city)
+    * print jsonObject
+    * print  'name is ' + (jsonObject[1].name) + ' City is ' + (jsonObject[1].city)
 
-@PrintComples
-Scenario: Print Complex Json Array
+  @PrintComples
+  Scenario: Print Complex Json Array
 
-* def jsonObj = 
+    * def jsonObj =
 """
 {
 	"id": "0001",
@@ -53,6 +53,6 @@ Scenario: Print Complex Json Array
 		]
 }
 """
-	* print jsonObj
-	* print jsonObj.topping
+    * print jsonObj
+    * print jsonObj.topping
 		
